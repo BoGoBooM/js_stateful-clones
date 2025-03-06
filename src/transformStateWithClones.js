@@ -28,8 +28,8 @@ function transformStateWithClones(state, actions) {
       default:
         break;
     }
+    states.push({ ...stateCopy });
   }
-  states.push({ ...stateCopy });
 
   return states;
 }
